@@ -121,6 +121,11 @@ L82";
     const REAL_INPUT: &str = include_str!("../input/2025/day1.txt");
 
     #[test]
+    fn real_d1p1() {
+        let ans = super::part1(REAL_INPUT);
+        assert_eq!(ans, 1026)
+    }
+    #[test]
     fn real_d1p2() {
         let ans = super::part2(REAL_INPUT);
         assert_eq!(ans, 5923)
